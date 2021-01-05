@@ -1,5 +1,3 @@
-# Hello!
-
 Notebooks:
 
 <ul>
@@ -9,3 +7,7 @@ Notebooks:
         {% endif %}
     {% endfor %}
 </ul>
+
+---
+
+_Powered by [Pluto.jl](https://github.com/fonsp/Pluto.jl)_
