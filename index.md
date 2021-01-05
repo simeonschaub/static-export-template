@@ -8,6 +8,8 @@ Notebooks:
     {% endfor %}
 </ul>
 
----
+<br>
+<br>
+<br>
 
-_Powered by [Pluto.jl](https://github.com/fonsp/Pluto.jl)_
+<span style="opacity: .5; text-align: right;">Powered by [Pluto.jl](https://github.com/fonsp/Pluto.jl)</span>
