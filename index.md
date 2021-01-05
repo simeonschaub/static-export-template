@@ -2,13 +2,13 @@
 
 I am Jekyll?
 
-{{ site.static_files }}
-
 aaaa
 
 <ul>
     {% for page in site.static_files %}
-    <li>{{ page.path }}</li>
+        {% if page.extname == ".html" %}
+            <li><a href="{{ page.path | absolute_url }}">{{ page.name }}</a></li>
+        {% endif %}
     {% endfor %}
 </ul>
 
