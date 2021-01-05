@@ -2,6 +2,8 @@
 
 I am Jekyll?
 
+{{ site.static_files }}
+
 site.pages
 <ul>
     {% for page in site.html_files %}
