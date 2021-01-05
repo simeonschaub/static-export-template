@@ -4,7 +4,7 @@ I am Jekyll?
 
 site.pages
 <ul>
-    {% for page in site.pages %}
-    <li><a href="{{ page.url | absolute_url }}">{{ page.url }}</a></li>
+    {% for page in site.html_files %}
+    <li><a href="{{ page.path | absolute_url }}">asdf {{ page.path }} name {{ page.name }}</a></li>
     {% endfor %}
 </ul>
