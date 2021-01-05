@@ -21,6 +21,23 @@ bbbb
     {% endfor %}
 </ul>
 
+ccc
+
+
+<ul>
+    {% for page in site.html_files %}
+    <li>{{ page.path }}</li>
+    {% endfor %}
+</ul>
+
+ddddd
+
+<ul>
+    {% for page in site.html_files %}
+    <li>{{ page.name }}</li>
+    {% endfor %}
+</ul>
+
 
 site.pages
 <ul>
