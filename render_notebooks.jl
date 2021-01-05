@@ -14,8 +14,15 @@ Pkg.add([
 import PlutoUtils.Export;
 
 
-allfiles = filter(isfile, readdir());
-jlfiles = filter(x -> occursin(".jl",x), allfiles);
+jlfiles = vcat(map(walkdir(".")) do (root, dirs, files)
+    map(
+        filter(files) do file
+            occursin(".jl", file)
+        end
+        ) do file
+        joinpath(root, file)
+    end
+end...);
 notebookfiles = filter(jlfiles) do f
     readline(f) == "### A Pluto.jl notebook ###"
 end;
